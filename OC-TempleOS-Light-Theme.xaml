@@ -49,7 +49,7 @@
     <SolidColorBrush x:Key="PathEditPopupBackgroundBrush" Color="LightGray" />
 
     <!-- TempleOS-style: bright text on dark background -->
-    <SolidColorBrush x:Key="TextPrimaryBrush" Color="Mediumblue" />
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="Black" />
     <!--  set value to {DynamicResource SystemControlPageTextBaseHighBrush} to use the theme one  -->
 
 <!-- TempleOS-style: bright text on dark background -->
@@ -68,7 +68,7 @@
     <SolidColorBrush x:Key="TextImportantBrush" Color="Red" />
 
     <!--  Secondary Text, like extension in File, or path in Favorites  -->
-    <SolidColorBrush x:Key="TextUnimportantBrush" Color="Crimson" />
+    <SolidColorBrush x:Key="TextUnimportantBrush" Color="Red" />
 
         <!-- Fallbacks for framework/ModernWpf text keys so components that use
             those resources also get white text in this dark-themed palette -->
@@ -128,7 +128,7 @@
 
     <!--  File Browser Panel  -->
 
-    <SolidColorBrush x:Key="CurrentFolderPanelBackgroundBrush" Color="White" />
+    <SolidColorBrush x:Key="CurrentFolderPanelBackgroundBrush" Color="Transparent" />
     <SolidColorBrush x:Key="NavigationPanelBackgroundBrush.StandardLayout" Color="White " />
     <SolidColorBrush x:Key="NavigationPanelBackgroundBrush.ColumnsLayout" Color="Transparent" />
     <!--  Make transparent to show acrylic effect underneath, otherwise make the same as FilesPanelBorder background (below)  -->
@@ -258,7 +258,7 @@
 
 
 
-    <SolidColorBrush x:Key="ListItemEvenBackgroundBrush" Color="Whitesmoke" />
+    <SolidColorBrush x:Key="ListItemEvenBackgroundBrush" Color="Transparent" />
     <SolidColorBrush x:Key="ListItemOddBackgroundBrush" Color="Transparent" />
     <SolidColorBrush x:Key="ListItemToDoBackgroundBrush" Color="Cyan" />
     <SolidColorBrush x:Key="ListItemToDoDoneBackgroundBrush" Color="Lime" />
@@ -270,9 +270,9 @@
         x:Key="HoverItemEffect"
         BlurRadius="0"
         Direction="90"
-        Opacity="0"
+        Opacity="1"
         ShadowDepth="0"
-        Color="Magenta" />
+        Color="LightGray" />
 
     <!--  For dialogs/popups  -->
     <DropShadowEffect
@@ -321,7 +321,7 @@
     <Style x:Key="FolderItemSelectedInCurrentBorder" TargetType="{x:Type Border}">
         <Setter Property="CornerRadius" Value="0" />
         <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="Background" Value="Red" />
+        <Setter Property="Background" Value="Cyan" />
     </Style>
 
 
