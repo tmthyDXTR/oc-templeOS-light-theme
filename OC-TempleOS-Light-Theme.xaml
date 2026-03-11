@@ -141,10 +141,12 @@
         -->
         <!--<Setter Property="Background" Value="{Binding Path=Background, RelativeSource={RelativeSource Mode=FindAncestor,
             AncestorType={x:Type Control}, AncestorLevel=3}}" />-->
-        <Setter Property="Background" Value="Transparent" />
+        <!--  Inactive panel background  -->
+        <Setter Property="Background" Value="White" />
         <Style.Triggers>
             <DataTrigger Binding="{Binding IsCurrent, RelativeSource={RelativeSource TemplatedParent}}" Value="True">
-                <!-- <Setter Property="Background" Value="#44ffffff" /> -->
+                <!--  Active/selected panel background  -->
+                <Setter Property="Background" Value="White" />
             </DataTrigger>
         </Style.Triggers>
         <!--<Setter Property="Margin" Value="0,28,0,0"/>-->
@@ -410,9 +412,10 @@
     <!--  Flash item or right-click  -->
     <SolidColorBrush x:Key="FlashBrush" Color="Pink" />
 
+    <!--  Inactive browser overlay  -->
     <SolidColorBrush
         x:Key="OverlayInactiveBrowserBrush"
-        Opacity=".06"
+        Opacity=".1"
         Color="#000000" />
 
     <!--  For panel overlay whey dual-panel is being collapsed  -->
